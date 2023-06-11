@@ -6,9 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": "index.js",
+  "pkg": {
+    "outputPath": "executables",
+    "targets": ["node16-win"]
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@nut-tree/nut-js": "^3.1.2"
+    "@nut-tree/nut-js": "^3.1.2",
+    "encoding": "^0.1.13",
+    "node-notifier": "^10.0.1"
   }
 }
