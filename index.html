@@ -15,7 +15,16 @@
 	</head>
 	<body>
 		<h1>Totally Working</h1>
-		<div>
+    <div id="options-group">
+      <div id="countdown">
+        <input type="checkbox" name="countdown-checkbox" id="countdown-checkbox" value="infinite" checked/>
+        <label for="countdown-checkbox">Infinite Work</label><br>
+        <label for="countdown-input" class="countdown-input">Work for:</label><br>
+        <label for="countdown-input" class="countdown-input-comment">(in minutes)</label><br>
+        <input type="number" id="countdown-input" min="1" max="525600"/>
+      </div>
+    </div>
+		<div id="controls-group">
       <button id="start-button"> Start </button>
       <button id="stop-button"> Stop </button>
     </div>

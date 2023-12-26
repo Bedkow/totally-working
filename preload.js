@@ -1,9 +1,9 @@
-const { contextBridge } = require('electron/renderer')
+// const { contextBridge } = require('electron/renderer')
 
-contextBridge.exposeInMainWorld('versions', {
-  node: () => process.versions.node,
-  chrome: () => process.versions.chrome,
-  electron: () => process.versions.electron,
-  // expose 'ping' channel
-  ping: () => ipcRenderer.invoke('ping')
-})
+// contextBridge.exposeInMainWorld('versions', {
+//   node: () => process.versions.node,
+//   chrome: () => process.versions.chrome,
+//   electron: () => process.versions.electron,
+//   // expose 'ping' channel
+//   ping: () => ipcRenderer.invoke('ping')
+// })

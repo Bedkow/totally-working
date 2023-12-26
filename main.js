@@ -16,7 +16,7 @@ const createWindow = () => {
 app.whenReady().then(() => {
 
   //handle 'ping' channel events
-  ipcMain.handle('ping', () => 'pong')
+  // ipcMain.handle('ping', () => 'pong')
 
   createWindow()
 
