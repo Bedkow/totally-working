@@ -1,21 +1,30 @@
 {
   "name": "totally-working",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "An Electron anti-idle app",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "electron .",
+    "start": "electron-forge start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
-  "bin": "index.js",
-  "pkg": {
-    "outputPath": "executables",
-    "targets": ["node16-win"]
-  },
-  "author": "",
+  "keywords": [
+    "Electron"
+  ],
+  "author": "Daniel Bednarek",
   "license": "ISC",
+  "devDependencies": {
+    "@electron-forge/cli": "^7.2.0",
+    "@electron-forge/maker-deb": "^7.2.0",
+    "@electron-forge/maker-rpm": "^7.2.0",
+    "@electron-forge/maker-squirrel": "^7.2.0",
+    "@electron-forge/maker-zip": "^7.2.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.2.0",
+    "electron": "^28.1.0"
+  },
   "dependencies": {
-    "@nut-tree/nut-js": "^3.1.2",
-    "encoding": "^0.1.13",
-    "node-notifier": "^10.0.1"
+    "electron-squirrel-startup": "^1.0.0"
   }
 }
